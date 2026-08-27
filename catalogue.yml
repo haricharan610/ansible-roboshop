@@ -56,12 +56,12 @@
      ansible.builtin.service:
        name: catalogue
        state: started
-       enable: true
+       enabled: true
 
    - name: copying mongodb client
      ansible.builtin.copy:
-     src: mongo.repo
-     dest: /etc/yum.repos.d/mongo.repo
+       src: mongo.repo
+       dest: /etc/yum.repos.d/mongo.repo
 
    - name: installing mongodb client
      ansible.builtin.dnf:
