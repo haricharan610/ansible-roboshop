@@ -27,7 +27,7 @@
 
      - name: downloading application into app directory
        ansible.builtin.get_url:
-         path: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip 
+         url: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip 
          dest: /tmp/user.zip
 
      - name: extract the user code
@@ -54,7 +54,7 @@
          state: started
          enabled: yes
 
-         
+
 
 
                    
